@@ -3,13 +3,103 @@ body{
     margin: 0;
 }
 
-h1{
+/* h1{
     text-align: center;
     font-family: Arial;
-    color: #733d30;
-    margin: 0;
-    font-size: 1cm;
+} */
+
+.titlepage {
+     text-align: center;
+     padding-bottom: 40px;
 }
+
+.titlepage h2 {
+     font-size: 40px;
+     color: #733d30 !important;
+     line-height: 45px;
+     font-weight: bold;
+     padding: 0;
+}
+
+
+
+.about {
+    /* background-color: #fff; */
+    padding-top: 25px;
+    position: relative;
+    z-index: 1; /* sección base */
+}
+
+.about .titlepage {
+    text-align: left;
+    margin-top: 20%;
+    padding-bottom: 0;
+    margin-right: -20px;
+    position: relative;
+    z-index: 2; /* texto por encima de la imagen */
+}
+
+.about .titlepage h2 {
+    margin-bottom: 35px;
+    color: #733d30;
+}
+
+.about .titlepage p {
+    font-weight: 300;
+    color: #2e2d2d;
+    font-size: 17px;
+    line-height: 31px;
+    padding-bottom: 35px;
+}
+
+.about_img {
+    padding: 40px 30px 45px 30px;
+    position: relative;
+    z-index: 0; /* imagen al fondo */
+}
+
+.about_img::before {
+    position: absolute;
+    content: "";
+    background: url(../imagenes/vg.png);
+    top: 0;
+    height: 100%;
+    width: 452px;
+    right: 0;
+    border-radius: 5px;
+    z-index: -1; /* aún más al fondo */
+}
+
+.about_img figure {
+    margin: 0;
+    position: relative;
+}
+
+.about_img figure img {
+    width: 100%;
+    position: relative;
+    z-index: 0; /* ya no se impone sobre el cabezal */
+}
+
+.gallery {
+     margin-top: 80px;
+     padding-top: 0px;
+     /* background-color: #eae7e7; */
+     background-color: #fdd09e;
+     
+     padding-bottom: 50px;
+}
+
+.gallery .titlepage {
+     text-align: center;
+}
+
+.gallery .titlepage p {
+     color: #2a2b2a;
+     display: block;
+     padding-top: 20px;
+}
+
 
 /* Menu y Submenus */
 .navbar-nav{
