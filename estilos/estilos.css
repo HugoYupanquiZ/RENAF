@@ -47,7 +47,7 @@ body{
 .about .titlepage p {
     font-weight: 300;
     color: #2e2d2d;
-    font-size: 17px;
+    font-size: 22px;
     line-height: 31px;
     padding-bottom: 35px;
 }
@@ -95,9 +95,13 @@ body{
 }
 
 .gallery .titlepage p {
-     color: #2a2b2a;
      display: block;
-     padding-top: 20px;
+    font-weight: 300;
+    color: #2e2d2d;
+    font-size: 22px;
+    line-height: 31px;
+    padding-bottom: 35px;
+
 }
 
 
@@ -157,6 +161,10 @@ nav ul li:hover{
     background-position: top;
     background-position-x: center;
     background-attachment: fixed;
+}
+
+.carousel-caption h5{
+     background: #40772f;
 }
 
 
