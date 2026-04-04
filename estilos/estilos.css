@@ -1,6 +1,14 @@
 body{
     background: #fdd09e;
     margin: 0;
+    /* FLEX 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; */
+    /* GRID */
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 
 /* h1{
@@ -170,10 +178,10 @@ nav ul li:hover{
 
 /* pie de página */
 .footer {
-     background: #40772f;
-     margin-top: 10px;
-     padding-top: 10px;
-     text-align: center;
+    background: #40772f;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* 10px; */
 }
 
 .footer h3 {
